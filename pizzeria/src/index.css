@@ -1,9 +1,9 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
+  --text: #1f2937;
+  --text-h: #111827;
+  --bg: #fffaf5;
+  --border: #e5e7eb;
+  --code-bg: #f9f3ee;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
@@ -17,7 +17,7 @@
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
+  color-scheme: light;
   color: var(--text);
   background: var(--bg);
   font-synthesis: none;
@@ -52,6 +52,9 @@
 
 body {
   margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
 }
 
 #root {
@@ -64,13 +67,19 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  background: #ffffff;
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading);
-  font-weight: 500;
+  font-weight: 700;
   color: var(--text-h);
+  letter-spacing: -0.02em;
 }
 
 h1 {
@@ -91,8 +100,28 @@ h2 {
     font-size: 20px;
   }
 }
+p,
+label,
+input,
+button,
+span,
+small {
+  color: var(--text);
+  font-weight: 500;
+}
+
 p {
   margin: 0;
+}
+
+.card-text,
+.card-title,
+.text-muted {
+  color: #1f2937 !important;
+}
+
+.text-muted {
+  opacity: 0.9;
 }
 
 code,

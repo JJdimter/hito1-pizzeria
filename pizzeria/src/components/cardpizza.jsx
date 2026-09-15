@@ -3,12 +3,12 @@ const CardPizza = ({ name, price, ingredients, img }) => {
     <div className="card h-100 shadow-sm">
       <img src={img} className="card-img-top" alt={name} />
       <div className="card-body text-center">
-        <h5 className="card-title text-start fw-bold">Pizza {name}</h5>
+        <h5 className="card-title text-start fw-bold text-dark">Pizza {name}</h5>
         <hr />
-        <p className="card-text text-muted mb-1 fs-6">Ingredientes:</p>
-        <p className="card-text small">🍕 {ingredients.join(", ")}</p>
+        <p className="card-text mb-1 fs-6 text-dark">Ingredientes:</p>
+        <p className="card-text small text-dark">🍕 {ingredients.join(", ")}</p>
         <hr />
-        <h5 className="fw-bold fs-5">
+        <h5 className="fw-bold fs-5 text-dark">
           Precio: ${price.toLocaleString("es-CL")}
         </h5>
         <div className="d-flex justify-content-around mt-3">
